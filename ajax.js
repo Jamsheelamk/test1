@@ -126,22 +126,12 @@ function grocerryitems() {
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var item=document.getElementsByClassName("item");
+function changer(){
+    // divElem.innerHTML = "<p> changdd</p>";
+item.removeAttribute("src","./photo-1542838132-92c53300491e.jpg");
+// item.setAttribute("src","./11.jpg");
+}
 
 function ajax(){
 
@@ -168,6 +158,6 @@ function ajax(){
 
     }
 
-    xhttp.open("GET","ajax();",true);
+    xhttp.open("GET","grocerryitems();",true);
     xhttp.send();
 }
