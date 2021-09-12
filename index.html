@@ -8,12 +8,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <title>grocerry challenge</title>
+    <title>grocery challenge</title>
 
   
     <style>
         th, td, p, input {
-            font:14px Verdana;
+            font:14px xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         table, th, td 
         {
@@ -21,22 +22,24 @@
             border-collapse: collapse;
             padding: 2px 3px;
             text-align: center;
+            background-color: rgb(63, 12, 3);
         }
         th {
             font-weight:bold;
         }
         .item{
-          background-color: darksalmon;
-          height: 8cm;
-          width: 10cm;
+          /* background-color: rgb(22, 8, 3); */
+          height: 8.5cm;
+          width: 11cm;
         }
     </style>
 </head>
 <body>
   <br>
 <center>
-  <div class ="item" style="color: black;" >
-  <input type="button" onclick="grocerryitems()"  value="grocerry items" />
+  <div class ="item" style="color:white" >
+  <input type="button" style="background-color: aqua;" onclick="groceryitems() && ajax() && changer()" value="Grocery items" />
+  <!-- <img id="img" src="./photo-1542838132-92c53300491e.jpg" alt=""> -->
   <p id="showData"></p>
 </div>
 </center>
