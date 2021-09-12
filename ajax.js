@@ -1,6 +1,6 @@
 
 
-function grocerryitems() {
+function groceryitems() {
     var myBooks = [
         {
             "SI No": "1",
@@ -8,7 +8,7 @@ function grocerryitems() {
             "Quantity": "1",
             "Unit": "kg",
             "Department": "fruits",
-            "Notes": "good"
+            "Notes": "Red"
 
         },
         {
@@ -17,7 +17,7 @@ function grocerryitems() {
             "Quantity": "1",
             "Unit": "kg",
             "Department": "fruits",
-            "Notes": "good"
+            "Notes": "juicy type"
         },
         {
             "SI No": "3",
@@ -25,7 +25,7 @@ function grocerryitems() {
             "Quantity": "1",
             "Unit": "kg",
             "Department": "vegitables",
-            "Notes": "good"
+            "Notes": "Medium"
         },
         {
             "SI No": "4",
@@ -33,7 +33,7 @@ function grocerryitems() {
             "Quantity": "1",
             "Unit": "kg",
             "Department": "vegitables",
-            "Notes": "good"
+            "Notes": "small"
         },
         {
             "SI No": "5",
@@ -41,7 +41,7 @@ function grocerryitems() {
             "Quantity": "1",
             "Unit": "kg",
             "Department": "vegitables",
-            "Notes": "good"
+            "Notes": "red"
         },
         {
             "SI No": "6",
@@ -56,8 +56,8 @@ function grocerryitems() {
             "Item": "rice",
             "Quantity": "6",
             "Unit": "kg",
-            "Department": "\rice",
-            "Notes": "good"
+            "Department": "rice",
+            "Notes": "Basumathi"
         },
         {
             "SI No": "8",
@@ -65,7 +65,7 @@ function grocerryitems() {
             "Quantity": "1",
             "Unit": "kg",
             "Department": "oil",
-            "Notes": "good"
+            "Notes": "fresh cocunut oil"
         },
         {
             "SI No": "9",
@@ -126,12 +126,16 @@ function grocerryitems() {
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 }
-var item=document.getElementsByClassName("item");
-function changer(){
-    // divElem.innerHTML = "<p> changdd</p>";
-item.removeAttribute("src","./photo-1542838132-92c53300491e.jpg");
-// item.setAttribute("src","./11.jpg");
-}
+
+
+
+// var item=document.getElementById("img");
+
+// function changer(){
+    
+// item.removeAttribute("src","./photo-1542838132-92c53300491e.jpg");
+
+// }
 
 function ajax(){
 
@@ -158,6 +162,6 @@ function ajax(){
 
     }
 
-    xhttp.open("GET","grocerryitems();",true);
+    xhttp.open("GET","groceryitems();",true);
     xhttp.send();
 }
